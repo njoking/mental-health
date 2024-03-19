@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.logo a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-btn {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-btn span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+    .menu-btn {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        padding: 20px;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        color: #fff;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+}
+
+.hero {
+    background-image: url('persona2.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 40px); /* Adjusted height to account for the footer */
+    color: #fff;
+    margin-bottom: -20px; /* Remove bottom margin */
+}
+
+.hero h1 {
+    margin-bottom: 20px;
+}
+
+.about {
+    background-image: url('2bythen.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 40px); /* Adjusted height to account for the footer */
+    color: #fff;
+    margin-bottom: -20px; /* Remove bottom margin */
+    color:aqua;
+}
+
+.about h2 {
+    margin-bottom: 20px;
+}
+
+.contact {
+    background-image: url('call.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 40px); /* Adjusted height to account for the footer */
+    color: #fff;
+    margin-bottom: -20px; /* Remove bottom margin */
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+}
+
+.contact form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact form input[type="text"],
+.contact form input[type="email"],
+.contact form input[type="tel"],
+.contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact form button:hover {
+    background-color: #0056b3;
+}
+
+.map-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40%; /* Adjust as needed */
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio (height/width) */
+    border: 1px solid #ccc;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

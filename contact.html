@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Mental Health Awareness</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* CSS for positioning the map */
+        .map-container {
+            position: fixed;
+            bottom: 20px; /* Adjust as needed */
+            right: 20px; /* Adjust as needed */
+            width: 300px; /* Adjust as needed */
+            height: 200px; /* Adjust as needed */
+            border: 1px solid #ccc; /* Optional */
+        }
+    </style>
+</head>
+<body class="contact-page">
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">Mental Health Awareness</a>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <p>We listen to you because you listen to us.</p>
+            <p>Become part of our community and receive notification on our activities</p>
+            <p> PLEASE FILL OUT THIS FORM</p>
+            <form action="contact_process.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" name="phone" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+     <!-- Embed live map -->
+     <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb= 42.087683150351026, -93.87727554982736" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+
+    <footer>
+        <p>&copy; 2024 Mental Health Awareness. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
